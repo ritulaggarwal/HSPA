@@ -1,0 +1,49 @@
+[
+  {
+  "Id":1,
+  "Name": "Ritul",
+  "SellRent": 1,
+  "Type": "House",
+  "Price": 12000,
+  "Image": "prop-1"
+  },
+  {
+    "Id":2,
+    "SellRent": 1,
+    "Name": "Macro Home",
+    "Type": "House",
+    "Price": 14800,
+    "Image": "prop-2"
+    },
+    {
+      "Id":3,
+      "SellRent": 1,
+      "Name": "Pearl White",
+      "Type": "House",
+      "Price": 15000,
+      "Image": "prop-3"
+      },
+      {
+        "Id":4,
+        "SellRent": 2,
+        "Name": "Asian House",
+        "Type": "House",
+        "Price": 11000,
+        "Image": "prop-4"
+        },
+        {
+          "Id":5,
+          "SellRent": 1,
+          "Name": "Erose Villa",
+          "Type": "House",
+          "Price": 22000,
+          "Image": "prop-5"
+          },
+          {
+            "Id":6,
+            "SellRent": 1,
+            "Name": "Prime Villa",
+            "Type": "House",
+            "Price": 22500
+            }
+]
