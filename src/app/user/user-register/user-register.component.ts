@@ -82,5 +82,9 @@ export class UserRegisterComponent implements OnInit {
       mobile: this.mobile.value
     }
   }
+  onReset(){
+    this.userSubmitted=false;
+    this.registrationForm.reset();
+  }
 
 }
