@@ -5,6 +5,14 @@
   overflow: hidden;
   position: relative;
 }
+.card-body h1{
+  color: #0069d9;
+  font-family: fantasy;
+}
+.font-highlight{
+  color: red;
+  font-family: italic;
+}
 
 .card:hover img{
   transform: scale(1.2,1.2);

@@ -8,6 +8,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
 import { AppComponent } from './app.component';
 import { PropertyCardComponent } from './property/property-card/property-card.component';
@@ -17,13 +18,16 @@ import { AddPropertyComponent } from './property/add-property/add-property.compo
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
+import { FilterPipe } from './Pipes/filter.pipe';
+import { SortPipe } from './Pipes/sort.pipe';
+
 
 
 const appRoutes: Routes=[
   {path:'', component: PropertyListComponent},
   {path:'rent-property', component: PropertyListComponent},
   {path: 'add-property', component: AddPropertyComponent},
-  {path: 'property-detail/:id', component: PropertyDetailComponent},
+  {path: 'property-detail/:id', component: PropertyDetailComponent },
   {path: 'user/login', component: UserLoginComponent},
   {path: 'user/register', component: UserRegisterComponent},
   {path: '**', component: PropertyListComponent}
@@ -38,7 +42,9 @@ const appRoutes: Routes=[
       PropertyDetailComponent,
       AddPropertyComponent,
       UserLoginComponent,
-      UserRegisterComponent
+      UserRegisterComponent,
+      FilterPipe,
+      SortPipe
    ],
   imports: [
     BrowserModule,
@@ -51,6 +57,7 @@ const appRoutes: Routes=[
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
